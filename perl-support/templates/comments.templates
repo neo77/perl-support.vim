@@ -27,73 +27,114 @@
 #     SEE ALSO: n/a
 #===============================================================================
 == Comments.file description pl == map:chpl, sc:d, start, noindent ==
-#!/usr/bin/env perl 
-#===============================================================================
-#
-#         FILE: |FILENAME|
-#
-#        USAGE: ./|FILENAME|  
-#
-#  DESCRIPTION: <CURSOR>
-#
-#      OPTIONS: ---
-# REQUIREMENTS: ---
-#         BUGS: ---
-#        NOTES: ---
-#       AUTHOR: |AUTHOR| (|AUTHORREF|), |EMAIL|
-# ORGANIZATION: |ORGANIZATION|
-#      VERSION: 1.0
-#      CREATED: |DATE| |TIME|
-#     REVISION: ---
-#===============================================================================
+#!/usr/bin/env perl
+#APos: APosDoc=1.6
+#*
+#* Info: |CURSOR|
+#* Author: |AUTHOR| (|AUTHORREF|) <|EMAIL|>
+#* Owner: |AUTHOR| (|AUTHORREF|) <|EMAIL|>
+#*
+
 
 use strict;
 use warnings;
 use utf8;
 
+our $VERSION = 1.0;
+
+#=------------------------------------------------------------------------( use, constants )
+
+# --- find bin ---
+use FindBin qw/$Bin/;
+
+# --- cpan libs ---
+use Params::Dry;            # parameters 
+
+
+#=------------------------------------------------------------------------( functions )
+
+
+
+#=------------------------------------------------------------------------( main )
+
+
+
 == Comments.file description pm == map:chpm, sc:d, start, noindent ==
-#
-#===============================================================================
-#
-#         FILE: |FILENAME|
-#
-#  DESCRIPTION: <CURSOR>
-#
-#        FILES: ---
-#         BUGS: ---
-#        NOTES: ---
-#       AUTHOR: |AUTHOR| (|AUTHORREF|), |EMAIL|
-# ORGANIZATION: |ORGANIZATION|
-#      VERSION: 1.0
-#      CREATED: |DATE| |TIME|
-#     REVISION: ---
-#===============================================================================
+#!/usr/bin/env perl
+#APos: APosDoc=1.6
+#*
+#* Info: |CURSOR|
+#* Author: |AUTHOR| (|AUTHORREF|) <|EMAIL|>
+#* Owner: |AUTHOR| (|AUTHORREF|) <|EMAIL|>
+#*
 
 use strict;
 use warnings;
+use utf8;
+
+
+package |MODULE|;
+
+    our $VERSION = 1.0;
+    
+    #=------------------------------------------------------------------------( use, constants )
+
+    use Liban::Params;		        # main APos params lib (param_rq, param_op, typedef)
+
+
+    #=------------------------------------------------------------------------( class attributes )
+
+
+    #=------------------------------------------------------------------------( attributes )
+
+
+    #=------------------------------------------------------------------------( constructor / demolish )
+
+
+    #=------------------------------------------------------------------------( private methods )
+    # start every private function with '_' sign
+
+
+    #=------------------------------------------------------------------------( class methods )
+    # start every class function with capital letter
+
+
+    #=------------------------------------------------------------------------( public methods )
+
+
+7&&7;
+#+ end of class |MODULE|
  
 == Comments.file description t == map:cht, sc:d, start, noindent ==
-#
-#===============================================================================
-#
-#         FILE: |FILENAME|
-#
-#  DESCRIPTION: <CURSOR>
-#
-#        FILES: ---
-#         BUGS: ---
-#        NOTES: ---
-#       AUTHOR: |AUTHOR| (|AUTHORREF|), |EMAIL|
-# ORGANIZATION: |ORGANIZATION|
-#      VERSION: 1.0
-#      CREATED: |DATE| |TIME|
-#     REVISION: ---
-#===============================================================================
+#!/usr/bin/env perl
+#APos: APosDoc=1.6
+#*
+#* Info: Test for |CURSOR|
+#* Author: |AUTHOR| (|AUTHORREF|) <|EMAIL|>
+#* Owner: |AUTHOR| (|AUTHORREF|) <|EMAIL|>
+#*
 
 use strict;
 use warnings;
+use utf8;
 
-use Test::More tests => 1;                      # last test to print
+use Test::Most;                 # test module
+use APos::Test::APosTest;		# for colors
+
+#=--------------
+#  basic tests
+#=--------------
+#* can_ok, use_ok and trying to create object
+newgroup("basic tests");
+{
+    use_ok( '' );
+    map { can_ok( '', $_ ) } qw(
+                
+            );
+
+}
+done_testing();
+
 
 
 == Comments.file description pod == map:chpo, sc:d, start ==

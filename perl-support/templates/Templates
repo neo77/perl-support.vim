@@ -2,13 +2,15 @@
 §  User Macros
 § ==========================================================
 
-SetMacro( 'AUTHOR',      'YOUR NAME' )
-SetMacro( 'AUTHORREF',   '' )
-SetMacro( 'COMPANY',     '' )
-SetMacro( 'COPYRIGHT',   '' )
-SetMacro( 'EMAIL',       '' )
-SetMacro( 'LICENSE',     '' )
-SetMacro( 'ORGANIZATION','' )
+SetPath(
+
+SetMacro( 'AUTHOR',      g:AuthorName )
+SetMacro( 'AUTHORREF',   g:AuthorRef )
+SetMacro( 'COMPANY',     g:Company )
+SetMacro( 'COPYRIGHT',   g:Copyright )
+SetMacro( 'EMAIL',       g:Email )
+SetMacro( 'LICENSE',     g:License )
+SetMacro( 'ORGANIZATION', g:Organization )
 
 SetStyle( 'default' )
 
