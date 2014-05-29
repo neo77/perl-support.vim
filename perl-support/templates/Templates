@@ -2,8 +2,6 @@
 §  User Macros
 § ==========================================================
 
-SetPath(
-
 SetMacro( 'AUTHOR',      g:AuthorName )
 SetMacro( 'AUTHORREF',   g:AuthorRef )
 SetMacro( 'COMPANY',     g:Company )

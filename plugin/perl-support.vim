@@ -159,7 +159,7 @@ else
 					\	$HOME.'/.vim/autoload/mmtoolbox/' ]
 	endif
 	"
-	let s:Perl_Perl		  	          = '/usr/bin/perl'
+	let s:Perl_Perl		  	          = 'perl'
   let g:Perl_FilenameEscChar 			= ' \%#[]'
 	"
   " ==============================================================================
@@ -245,7 +245,7 @@ call s:perl_SetLocalVariable('Perl_TimestampFormat        ')
 call s:perl_SetLocalVariable('Perl_UseToolbox             ')
 call s:perl_SetLocalVariable('Perl_XtermDefaults          ')
 "
-let s:Perl_Perl_is_executable	= executable(s:Perl_Perl)
+let s:Perl_Perl_is_executable	=  executable(s:Perl_Perl)
 "
 " set default geometry if not specified
 "
@@ -1006,7 +1006,7 @@ function! Perl_SyntaxCheck ()
 	"
 	" Errorformat from compiler/perl.vim (VIM distribution).
 	"
-	exe ':set makeprg='.s:Perl_Perl.'\ -cW'
+	exe ':set makeprg='.s:Perl_Perl.'\ -cw'
 	exe ':set errorformat=
 				\%-G%.%#had\ compilation\ errors.,
 				\%-G%.%#syntax\ OK,
