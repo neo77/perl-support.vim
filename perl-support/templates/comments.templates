@@ -74,7 +74,7 @@ use utf8;
 
 
 package |MODULE|;
-
+{
     our $VERSION = 1.0;
     
     #=------------------------------------------------------------------------( use, constants )
@@ -100,7 +100,7 @@ package |MODULE|;
 
 
     #=------------------------------------------------------------------------( public methods )
-
+};
 
 7&&7;
 #+ end of class |MODULE|
@@ -119,7 +119,7 @@ use warnings;
 use utf8;
 
 use Test::Most;                 # test module
-use APos::Test::APosTest;		# for colors
+use Liban::Test;        		# for colors and groups
 
 #=--------------
 #  basic tests
