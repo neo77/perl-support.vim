@@ -79,7 +79,7 @@ package |MODULE|;
     
     #=------------------------------------------------------------------------( use, constants )
 
-    use Liban::Params;		        # main APos params lib (param_rq, param_op, typedef)
+    use Params::Dry;		        # main APos params lib (param_rq, param_op, typedef)
 
 
     #=------------------------------------------------------------------------( class attributes )
